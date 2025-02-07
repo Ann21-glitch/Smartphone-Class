@@ -1,4 +1,4 @@
-# Smartphone-Class
+ # Assignment1 :Smartphone-Class
 
 
 class Smartphone:
@@ -41,8 +41,7 @@ class SmartphoneWithCamera(Smartphone):
         return f"{base_info}, Camera: {self.camera_megapixels}MP"
 
 
-
-# Create a basic smartphone instance
+   # Create a basic smartphone instance
 
 basic_phone = Smartphone("GenericBrand", "ModelX", 299, 64, 24)
 
@@ -63,4 +62,72 @@ print(camera_phone.get_info())
 print(camera_phone.take_photo())
 
 print(camera_phone.record_video(10))
+
+
+
+
+
+
+# Activity 2
+
+
+class Vehicle:
+   
+    def move(self):
+        pass  # This method will be overridden in the subclasses
+
+
+class Car(Vehicle):
+    
+    def move(self):
+        print("Driving 🚗")
+
+
+class Plane(Vehicle):
+    
+    def move(self):
+        print("Flying ✈️")
+
+
+class Boat(Vehicle):
+   
+    def move(self):
+        print("Sailing 🚤")
+
+
+class Bicycle(Vehicle):
+    
+    def move(self):
+        print("Pedaling 🚲")
+
+
+def main():
+   
+    # Create instances of each vehicle
+    
+    car = Car()
+    
+    plane = Plane()
+   
+    boat = Boat()
+    
+    bicycle = Bicycle()
+
+   
+    # Call the move() method for each vehicle
+    
+    car.move()
+   
+    plane.move()
+    
+    boat.move()
+    
+    bicycle.move()
+
+
+# Run the main program
+
+if __name__ == "__main__":
+    main()
+
 
